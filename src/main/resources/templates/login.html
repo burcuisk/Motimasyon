@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"/>
+
+<body class="login-page">
+
+<nav th:replace="common/navbar :: common-navbar"/>
+
+<div class="wrapper" style="margin-top:10%">
+    <div class="header header-filter" style="background-size: cover; background-position: top center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                    <div class="card card-signup">
+                        <form class="form" method="" action="">
+                            <div class="header header-primary text-center">
+                                <h4>Motomasyona Giriş</h4>
+                            </div>
+                            <p class="text-divider">Motive et! Motive ol!</p>
+                            <div class="content">
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">face</i>
+										</span>
+                                    <input type="text" class="form-control" placeholder="Kullanıcı Adı"/>
+                                </div>
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <input type="password" class="form-control" placeholder="Şifre"/>
+                                </div>
+
+                            </div>
+                            <div class="footer text-center">
+                                <a href="" class="btn btn-simple btn-primary btn-lg">Giriş Yap</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<div th:replace="common/footer :: common-footer"></div>
+
+
+</html>

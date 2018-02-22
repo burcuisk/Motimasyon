@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"/>
+
+<body class="index-page">
+
+<nav th:replace="common/navbar :: common-navbar"/>
+
+<div class="wrapper">
+    <div class="header header-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="brand">
+                        <h1>Sağlıklı Yaşam Motimasyonu</h1>
+                        <h3>İncele beğenirsen bize katıl :)</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main main-raised">
+        <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="profile-tabs">
+                            <div class="nav-align-center">
+                                <ul class="nav nav-pills" role="tablist">
+                                    <li class="active">
+                                        <a href="#studio" role="tab" data-toggle="tab">
+                                            <i class="material-icons">camera</i>
+                                            Fotoğraflar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#work" role="tab" data-toggle="tab">
+                                            <i class="material-icons">palette</i>
+                                            Blog Yazıları
+                                        </a>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content gallery">
+                                    <div class="tab-pane active" id="studio">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                slm nbr
+                                            </div>
+                                            <div class="col-md-6">
+                                                aasas
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane text-center" id="work">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                hello blog 1
+                                            </div>
+                                            <div class="col-md-6">
+                                                blog2
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Profile Tabs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<div th:replace="common/footer :: common-footer"></div>
+
+
+</html>

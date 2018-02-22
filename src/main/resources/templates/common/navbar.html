@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+,
+<body>
+    <!-- Navbar -->
+    <nav th:fragment="common-navbar" class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/">
+                    <div class="logo-container">
+
+                        <div class="brand">
+                            Sağlıklı Yaşam Motimasyonu
+                        </div>
+
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navigation-index">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a  th:href="@{'/kayit'}">
+                            <i class="material-icons">person_add</i> Bize Katıl
+                        </a>
+                    </li>
+                    <li>
+                        <a th:href="@{'/giris'}">
+                            <i class="material-icons">person</i> Giriş Yap
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</body>
+
+</html>
